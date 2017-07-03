@@ -6,7 +6,7 @@ import javax.persistence.*;
 import java.util.Date;
 
 /**
- * Created by clement on 26.06.17.
+ * Класс "Пользователь"
  */
 
 @Entity
@@ -27,6 +27,15 @@ public class User {
 
     @Column
     private Date createdDate = new Date();
+
+    public User() {
+    }
+
+    public User(String name, int age, boolean isAdmin) {
+        this.name = name;
+        this.age = age;
+        this.isAdmin = isAdmin;
+    }
 
     public int getId() {
         return id;

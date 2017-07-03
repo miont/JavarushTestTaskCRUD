@@ -25,10 +25,6 @@
                     <td>Права администратора:</td>
                     <td><form:checkbox path="admin" /></td>
                 </tr>
-                <%--<tr>--%>
-                    <%--<td>Дата добавления:</td>--%>
-                    <%--<td><form:input path="createdDate" /></td>--%>
-                <%--</tr>--%>
                 <tr>
                     <td colspan="2" align="center"><input type="submit" value="Сохранить"></td>
                 </tr>

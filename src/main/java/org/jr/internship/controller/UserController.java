@@ -14,7 +14,7 @@ import java.util.List;
 import static org.springframework.web.bind.annotation.RequestMethod.*;
 
 /**
- * Created by clement on 26.06.17.
+ * Контроллер
  */
 @Controller
 @RequestMapping(value = "/")
@@ -47,7 +47,6 @@ public class UserController {
     public ModelAndView saveUser(@ModelAttribute User user) {
         System.out.println("User ID = " + user.getId());
         if(user.getId() == 0) {
-            System.out.println("User ID is null!!!");
             userService.addUser(user);
         }
         else {
@@ -72,9 +71,4 @@ public class UserController {
         model.addObject("user", user);
         return model;
     }
-
-//    @RequestMapping(value = "/searchUsersByName", method = GET)
-//    public ModelAndView searchUsersByName(ModelAndView model, HttpServletRequest request) {
-//        return listUsers(model,request);
-//    }
 }

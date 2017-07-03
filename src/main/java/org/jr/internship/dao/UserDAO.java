@@ -5,7 +5,7 @@ import org.jr.internship.model.User;
 import java.util.List;
 
 /**
- * Created by clement on 26.06.17.
+ * Доступ к базе данных
  */
 public interface UserDAO {
 

@@ -7,11 +7,23 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Users</title>
-    <link rel="stylesheet" type="text/css" href="/resources/paging/page-nav.css">
     <script type="text/javascript" src="/resources/paging/paging.js"></script>
     <script type="text/javascript" src="/resources/js/script.js"></script>
     <style type="text/css">
         table tbody tr:hover {background-color:#9acfea}
+
+        .pg-normal {
+            color: black;
+            font-weight: normal;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .pg-selected {
+            color: black;
+            font-weight: bold;
+            text-decoration: underline;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -25,7 +37,7 @@
             document.getElementById("userName").value =  getParameterByName("userName");
         </script>
     </div>
-    <table id="usersTable" border="1">
+    <table class="table" id="usersTable" border="1">
         <thead>
             <th>Имя</th>
             <th>Возраст</th>
@@ -56,6 +68,6 @@
     pager.showPageNav('pager', 'pageNavPosition');
     pager.showPage(1);
 </script>
-<%--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>--%>
+
 </body>
 </html>

@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 /**
- * Created by clement on 26.06.17.
+ * Доступ к базе данных
  */
 
 @Repository

@@ -3,7 +3,6 @@
  */
 
 function makeSearchUserRequest(ev, elem) {
-
     var key = ev.charCode ? ev.charCode : ev.keyCode ? ev.keyCode : 0;
     if(key === 13) {
         window.location.href = elem.value ? '/?userName='+elem.value : '/';

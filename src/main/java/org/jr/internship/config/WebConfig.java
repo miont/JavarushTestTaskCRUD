@@ -21,7 +21,7 @@ import javax.sql.DataSource;
 import java.util.Properties;
 
 /**
- * Created by clement on 26.06.17.
+ * Настройка Spring
  */
 @Configuration
 @EnableWebMvc

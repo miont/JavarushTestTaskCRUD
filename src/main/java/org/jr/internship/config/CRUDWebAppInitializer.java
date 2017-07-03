@@ -3,7 +3,7 @@ package org.jr.internship.config;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 /**
- * Created by clement on 26.06.17.
+ * Настройка веб-приложения
  */
 public class CRUDWebAppInitializer
         extends AbstractAnnotationConfigDispatcherServletInitializer{
